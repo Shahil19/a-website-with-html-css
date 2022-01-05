@@ -28,6 +28,7 @@ header h1 {
 
 .hero-section .hero-text>p {
     letter-spacing: 1px;
+    line-height: 18px;
 }
 
 .hero-section>h2 {
@@ -95,7 +96,7 @@ p {
     font-size: 14px;
 }
 
-.container-desktop {
+.container {
     max-width: 1080px;
     margin: 0 50px;
 }
@@ -137,4 +138,66 @@ p {
     /* change the direction of the change here  */
     color: #fff;
     text-decoration: none;
+}
+
+
+
+/*-------------- Responsive ------------------*/
+@media (max-width: 48em) {
+    .container {
+        margin: 0;
+    }
+
+    /*----------Header Section --------------*/
+
+    header>h1 {
+        font-size: 28px;
+    }
+
+    /*----------------- Hero section ------------*/
+    .flex.hero-content {
+        display: block;
+    }
+
+    .hero-section h2 {
+        text-align: center;
+    }
+
+    .hero-section .hero-text {
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    .hero-section .hero-image {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /*----------------- Division section ------------*/
+    .division-section>h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 30em) {
+
+    /*----------Header Section --------------*/
+    header>h1 {
+        font-size: 24px;
+        margin: 0px 20px;
+    }
+
+    /*----------------- Hero section ------------*/
+    .hero-section h2 {
+        font-size: 20px;
+    }
+
+
+
+    .hero-section .hero-text>p {
+        letter-spacing: 0.5px;
+        font-size: 13px;
+    }
+
 }
